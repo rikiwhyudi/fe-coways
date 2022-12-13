@@ -8,7 +8,7 @@ function Header() {
   const [state, dispatch] = useContext(UserContext);
 
   const logout = () => {
-    console.log(state);
+    // console.log(state);
     dispatch({
       type: "LOGOUT",
     });

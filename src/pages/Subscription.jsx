@@ -15,7 +15,7 @@ function Subscription() {
   const [trans] = useState([])
   const id = state.user.id
 
-  console.log(state)
+  // console.log(state)
 
   const checkAuth = () => {
     if (state.isLogin === false) {
@@ -47,23 +47,25 @@ function Subscription() {
   }, [])
 
 
-  const getTransaction =  async () => {
+  /* const getTransaction =  async () => {
     try {
       //get all transactions
       const response = await API.get("/transactions")
       const respID = response?.data.data.filter((item) => item.user.id === id) 
 
-      console.log("resp id", respID)
+      // console.log("resp id", respID)
     } catch (error) {
       console.log(error)
     }
   }
 
   console.log(trans, "<==== transactions")
+  
 
   useEffect(() => {
     getTransaction()
   }, [state])
+*/
 
   const handlePay = async () => {
     try {

@@ -67,7 +67,7 @@ function Beranda() {
                     />
                     <Card.Body>
                       <div className="text-white cards">
-                        <div className="d-flex justify-content-between">
+                        <div className="d-flex justify-content-between align-items-center">
                           <p className="fs-title">{item?.title}</p>
                           <p className="fs-year">{item?.year}</p>
                         </div>
@@ -97,7 +97,7 @@ function Beranda() {
                     <Card.Body>
                     <Card.Body>
                       <div className="text-white cardx">
-                        <div className="d-flex justify-content-between">
+                        <div className="d-flex justify-content-between align-items-center">
                           <p className="fx-title">{item?.title}</p>
                           <p className="fx-year">{item?.year}</p>
                         </div>

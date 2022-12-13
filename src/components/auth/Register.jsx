@@ -32,7 +32,7 @@ function Register() {
       
       const alert = <Alert variant="success" className="py-1" >Success</Alert>
       setMessage(alert)
-      console.log("berhasil daftar", response.data.data)
+      // console.log("berhasil daftar", response.data.data)
       setForm("")
 
     } catch (error) {

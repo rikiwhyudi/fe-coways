@@ -9,7 +9,7 @@ function Home() {
   const navigate = useNavigate();
   const [state] = useContext(UserContext);
 
-  console.log("ini isi state home js", state)
+  // console.log("ini isi state home js", state)
 
   const checkAuth = () => {
     if (state.isLogin === true) {
