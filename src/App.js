@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
-import Subscription from "./components/Subscription";
+import Subscription from "./pages/Subscription";
 import { API, setAuthToken } from "./config/api";
 import { UserContext } from "./context/UserContext";
 import AddMusic from "./pages/AddMusic";

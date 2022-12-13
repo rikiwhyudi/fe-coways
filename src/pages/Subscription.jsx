@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import Header from "./Header";
+import Header from "../components/Header";
 import { Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { UserContext } from "../context/UserContext";
@@ -31,7 +31,8 @@ function Subscription() {
      //change this to the script source you want to load, for example this is snap.js sandbox env
      const midtransScriptUrl = "https://app.sandbox.midtrans.com/snap/snap.js";
      //change this according to your client-key
-     const myMidtransClientKey = "SB-Mid-client-8GBlOlIZLs7yEVF3";
+     const myMidtransClientKey = process.env.REACT_APP_MIDTRANS_CLIENT_KEY;
+    //  const myMidtransClientKey = "SB-Mid-client-8GBlOlIZLs7yEVF3";
  
      let scriptTag = document.createElement("script");
      scriptTag.src = midtransScriptUrl;
