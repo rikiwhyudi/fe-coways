@@ -327,6 +327,7 @@ tr > td {
 .fs-year {
   font-size: 14px;
 }
+
 .fs-title {
   font-size: 18px;
 }
@@ -334,3 +335,16 @@ tr > td {
 .cards {
   margin: 0 -12px;
 }
+
+.cardx {
+  margin: -20px -30px 0;
+}
+
+.fx-year {
+  font-size: 14px;
+}
+
+.fx-title {
+  font-size: 18px;
+}
+

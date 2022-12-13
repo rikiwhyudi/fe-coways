@@ -25,7 +25,7 @@ function Beranda() {
 
   const { data: userPrem, refetch } = useQuery("userCache", async () => {
     const response = await API.get(`/user/${state.user.id}`);
-    console.log("res", response.data);
+    // console.log("res", response.data);
     return response.data.data;
   });
 
@@ -87,7 +87,6 @@ function Beranda() {
                       cursor: "pointer",
                     }}
                     className="mt-5 card-mp3"
-                    //kirim item ke func handle play
                     onClick={() => navigate("/sub-premium")}
                   >
                     <Card.Img
@@ -97,10 +96,10 @@ function Beranda() {
                     />
                     <Card.Body>
                     <Card.Body>
-                      <div className="text-white cards">
+                      <div className="text-white cardx">
                         <div className="d-flex justify-content-between">
-                          <p className="fs-title">{item?.title}</p>
-                          <p className="fs-year">{item?.year}</p>
+                          <p className="fx-title">{item?.title}</p>
+                          <p className="fx-year">{item?.year}</p>
                         </div>
                         <p className="title-mp3">{item?.singer.name}</p>
                       </div>
