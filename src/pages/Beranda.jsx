@@ -43,7 +43,7 @@ function Beranda() {
 
   return (
     <>
-      <Container className="mb-5">
+      <Container className="mb-10">
         <CarouselSection />
         <div className="d-flex">
           <div class="row row-cols-4 gap-3 px-5">
