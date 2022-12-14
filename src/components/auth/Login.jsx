@@ -51,7 +51,7 @@ function Login() {
         // window.location.reload(false);
       
     } catch (error) { 
-      const alert =  (<Alert variant="danger" className="py-1">Failed</Alert>)
+      const alert =  (<Alert variant="danger" className="pt-2 alerts">Failed!</Alert>)
       setMessage(alert)
       console.log(error)
     }

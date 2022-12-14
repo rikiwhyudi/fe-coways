@@ -351,3 +351,8 @@ tr > td {
 .mb-10 {
   margin-bottom: 100px
 }
+
+.alerts {
+  width: 350px;
+  height: 50px;
+}

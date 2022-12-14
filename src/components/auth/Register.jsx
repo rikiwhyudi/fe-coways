@@ -30,13 +30,13 @@ function Register() {
 
       const response = await API.post("/register", form)
       
-      const alert = <Alert variant="success" className="py-1" >Success</Alert>
+      const alert = <Alert variant="success" className="pt-2 alerts" >Success</Alert>
       setMessage(alert)
       // console.log("berhasil daftar", response.data.data)
       setForm("")
 
     } catch (error) {
-      const alert = (<Alert variant="danger" className="py-1" >Failed</Alert>)
+      const alert = (<Alert variant="danger" className="pt-2 alerts" >Failed</Alert>)
       setMessage(alert)
       console.log(error)
     }
